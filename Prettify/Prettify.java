@@ -65,11 +65,13 @@ public class Prettify                                                           
             System.out.println("-h --help: Displays this help")                                              ;
             System.out.println("file: The file of filenames if -i option is selected")                       ;
             System.out.println("\t else the input file to be formatted")                                     ;
-            System.out.println("linewidth: the max width of the line (no wrap)")                             ;
+            System.out.println("linewidth: the max width of the line (no wrap) default: 80")                 ;
                                                                                                              }
         else if(args.length == 2)                                                                            {
             lineWidth = Integer.parseInt(args[1])                                                            ;
             prettify(args[0])                                                                                ;
                                                                                                              }
+        else if(args.length == 1)                                                                            
+        prettify(args[0])                                                                                    ;
                                                                                                              }
                                                                                                              }
