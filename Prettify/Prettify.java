@@ -52,7 +52,7 @@ public class Prettify                                                           
         if(args.length == 0) throw new Exception("File name needed\n")                                       ;
         else if(args[0].equals("-i") || args[0].equals("--inputFile"))                                       {
             Scanner sc = new Scanner(new File(args[1]))                                                      ;
-            lineWidth = Integer.parseInt(args[2])                                                            ;
+            if(args.length > 2) lineWidth = Integer.parseInt(args[2])                                        ;
             while(sc.hasNextLine())                                                                          {
                 prettify(sc.nextLine().trim())                                                               ;
                                                                                                              }
