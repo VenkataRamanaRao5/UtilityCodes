@@ -1,0 +1,5 @@
+alias view="./do.sh 1"
+alias set="./setCurrent.sh"
+alias comp="./do.sh 2"
+alias cpr="./do.sh 2;./do.sh 3"
+alias run="./do.sh 3"
